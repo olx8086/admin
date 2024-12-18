@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form </title>
+    <style>
+        #container{
+            background-color: #E2F1E7;
+            color:#243642;
+            width: 95%;
+            border: solid 1pt black;
+            margin:auto;
+            padding: 10px;
+        
+
+        }
+        form{
+        background-color:#629584;
+        padding: 10px;
+          
+        }
+        label{
+            color: #E2F1E7;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 200px;
+        
+       
+        }
+        input{
+            padding: 10px;
+            width:200px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius:10px;
+        }
+        input[type=checkbox]{
+            width:30px;
+
+        }
+        input[type=submit],input[type=reset] {
+            margin:10px;
+            background-color:#DA8359;
+            color:#030303;
+        }
+        input:focus{
+            background-color: #FCFAEE;
+        }
+        select{
+            border-color:#243642;
+            background-color:#E2F1E7;
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="container">
+
+        <h1>Registration Form</h1>
+        <form name="registration" action="#" method="get">
+        <table>
+            <tr>
+                <td><label for="usn">USN</label></td>
+                <td><input id="usn" type="text" /></td>
+            </tr>
+            <tr>
+                <td><label for="uname">User Name</label></td>
+                <td><input id="uname" name="uname" type="text" /></td>
+            </tr>
+            <tr>
+                <td><label for="pswd">Password</label></td>
+                <td><input id="pswd" name="pswd" type="hidden" /></td>
+            </tr>
+            <tr>
+                <td><label for="bday">Birthday</label></td>
+                <td><input name="bday" type="date" /></td>
+            </tr>
+            <tr>
+                <td><label for="city">Select city</label></td>
+                <td><select id="city" name="city">
+                    <optgroup label="Karnataka">
+                        <option>Bengaluru</option>
+                        <option>Ballari</option>
+                        <option>Hassan</option>
+                        <option>Raichur</option>
+                        <option>Hubballi</option>
+                    </optgroup>
+                    <optgroup label="Tamil Nadu">
+                        <option>Chennai</option>
+                        <option>Trichy</option>
+                        <option>Madhurai</option>
+                        <option>Vellore</option>
+                        <option>Salem</option>
+                    </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="plang">Select programming languages you know</label></td>
+                <td><input  name="plang" type="checkbox" value="C" />C<br/>
+                    <input  name="plang" type="checkbox" value="Java" />Java<br/>
+                    <input  name="plang" type="checkbox" value="Python" />Python<br/></td>
+            </tr>
+            <tr>
+                <td><label for="mypic">Upload a Photo</label></td>
+                <td><input id="mypic" name="mypic" type=file /></td>
+            </tr>
+            <tr>
+                <td><label for="pskill">Rate your programming skills in Web Technology</label></td>
+                <td><input id="pkill" name="pskill" type="range" min="1" max="10" step="1" /></td>
+            </tr>
+
+            <tr>
+                <td><label for="fcolor">Choose your favorite color</label></td>
+                <td><input id="fcolor" name="fcolor" type="color" /></td>
+            </tr>
+           
+            <tr>
+                <td colspan="2"><input name="submit" type="submit" /><input type="reset" /></td>
+            </tr>
+        </table>
+    </form>
+    </div>
+    
+</body>
+</html>

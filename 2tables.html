@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+    <title>Titmetable</title>
+    <style>
+        table {
+            border:solid 1pt black;
+            border-collapse: collapse;
+        }
+        td,th {border:solid 1pt black;
+        padding: 5pt;
+        text-align: center;}
+
+        .lab {
+            background-color: azure;
+        }
+        thead, th{
+            background-color: lightgray;
+        }
+        caption{
+            border: solid 1pt black;
+            padding: 5pt;
+            background-color: aliceblue;
+            color:crimson;
+            font-weight: bold;
+        }
+        tfoot {
+            background-color: lavender;
+            color:brown;
+            font-weight:bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1> Timetable </h1>
+    <table>
+        <caption>My class timetable</caption>
+        <thead>
+            <tr>
+                <th>Time/Day</th>
+                <th>08:00 - 09:00 AM</th>
+                <th>09:00 - 10:00 AM</th>
+                <th ></th>
+                <th>10:20 - 11:20 AM</th>
+                <th>11:20 - 12:20 AM</th>
+                <th></th>
+                <th>01:00 - 02:00 PM</th>
+                <th>02:00 - 02:00 PM</th>
+                <th>03:00 - 04:00 PM</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <th>Mon</th>
+            <td>CC-B</td> <td>CC-C</td><td rowspan="6">Short Break (10.00 - 10.20 a.m.)</td>
+            <td colspan="2" class="lab">5B3 Web lab</td><td rowspan="6">Lunch Break 
+                (12.20 - 1.00 PM)</td><td>TOC-B</td>
+            <td colspan="2"></td>
+             </tr>
+             <tr>
+                <th>Tue</th>
+                <td>CC-C</td> <td></td><td></td>
+                <td>TOC-B</td><td ></td>
+                <td ></td><td colspan="2"></td>
+             </tr>
+             <tr>
+                <th>Wed</th>
+                <td colspan="2" class="lab">5A3 Web lab</td>
+                <td>CC-B</td><td></td>
+                <td></td><td colspan="2">Club Activity</td>
+             </tr>
+             <tr>
+                <th>Thu</th>
+                <td>TOC-B</td> <td>CC-C</td>
+                <td>CC-B</td><td></td><td></td>
+                <td colspan="2">Mini Projects</td>
+             </tr>
+             <tr>
+                <th>Fri</th>
+                <td>CC-B</td> <td>TOC-B</td>
+                <td></td><td>CC-C</td><td></td>
+                <td colspan="2" class="lab">5C2-Web lab</td>
+             </tr>
+             <tr>
+                <th>Sat</th>
+                <td></td> <td></td>
+                <td colspan="2">College level activity</td><td></td>
+                <td colspan="2"></td>
+             </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="10"> 2024-2025 Department of CSE</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>

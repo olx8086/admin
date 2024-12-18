@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Blog</title>
+    <!-- <link href="mystyle.css" rel="stylesheet" type="text/css" /> -->
+    <style>
+      div {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-weight: 200;
+        margin: 20px;
+        padding: 10px;
+        border: solid 1pt black;
+      }
+      #container {
+        display: block;
+        width: 95%;
+        background-color: aliceblue;
+        border: dashed 1pt burlywood;
+      }
+      h2 {
+        font-size: 200%;
+        color: blueviolet;
+      }
+      h3 {
+        font-size: 120%;
+        color: cadetblue;
+      }
+      #title {
+        text-align: center;
+        letter-spacing: 15px;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        text-transform: uppercase;
+        color: darkslategray;
+        font-size: 200%;
+      }
+      span {
+        font-style: italic;
+        font-weight: 200;
+        color: coral;
+      }
+      img {
+        border-radius: 15px;
+        border: 2px solid darkgrey;
+        float: left;
+        margin-right: 20px;
+      }
+      date {
+        font-family: "Courier New", Courier, monospace;
+        font-style: italic;
+        color: darkblue;
+      }
+      .post {
+        border: dotted 1px grey;
+        background-color: #f1f3ff;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 30px;
+        text-indent: 15px;
+        height: 300px;
+      }
+
+      a:link {
+        background-color: yellow;
+      }
+
+      a:visited {
+        background-color: cyan;
+      }
+
+      a:hover {
+        background-color: lightgreen;
+      }
+
+      a:active {
+        background-color: hotpink;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div>
+        <h1 id="title">Blog</h1>
+      </div>
+      <h2>My trip to Jog Falls</h2>
+      <h3>Posted on <date>07.09.2020</date></h3>
+      <p class="post">
+        <img src="jogFalls.jpg" alt="Jog Falls" width="23%" />
+        Jog Falls[6] is a waterfall on the Sharavati river located in Siddapur
+        taluk of Uttara Kannada district[7] and its view point in Kargal town of
+        Shimoga district, Karnataka, India.[8][9] It is the second highest
+        plunge waterfall in India.[10]
+      </p>
+      <hr />
+      <h2>Time management hacks</h2>
+      <h3>Posted on <date>02.11.2020</date></h3>
+      <p class="post">
+        Eliminate half work at all costs <br />
+        Do the most important thing first <br />
+        Reduce the scope but stick to the schedule<br />
+        <br /><br />
+        Read <a href="#">Atomic Habits</a>
+      </p>
+      <hr />
+      <h2>TV shows reviews</h2>
+      <h3>Posted on <date>30.10.202</date></h3>
+      <p class="post">
+        <span>SPN</span> :
+
+        <span>TVD</span> :
+      </p>
+      <hr />
+      <div><!--footer--></div>
+    </div>
+  </body>
+</html>
